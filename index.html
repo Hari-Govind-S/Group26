@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>GROUP 26</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <script src="main-js.js"></script>
+        <div class="landing_page" id="Landing">
+            <div class="center">
+                <div class="menu_button_box">
+                    <div style="padding-top: 8px;"></div>
+                    <a class="menu_button" href="#About_us">Know More About Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="section2" id="About_us">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="slide_align">
+                <img src="Images/Hari_govind_s.png" class="image_box">
+                    <h1>Hari Govind S</h1>
+                    
+                    <p><br>Hello!<br>
+                    My name is Hari Govind S (CED19I048) and I am from Pathanamthitta, Kerala.<br>I am doing duel degree in computer science at <a href="http://iiitdm.ac.in/" class="link"><bold>IIITDM Kancheepuram.</bold></a></p>
+                    </div>
+            </div>
+
+        <div class="mySlides fade">
+                            <div class="slide_align">
+                <img src="Images/Akhil.png" class="image_box">
+                    <h1>Akhil Kumar Reddy</h1>
+                    
+                    <p><br>Hello!<br>
+                    My name is Akhil Kumar Reddy (CED19I046) and I am from Kadapa, Andhra Paradesh.<br>I am doing duel degree in computer science at <a href="http://iiitdm.ac.in/" class="link"><bold>IIITDM Kancheepuram.</bold></a></p>
+                    </div>
+                    </div>
+        
+
+            <div class="mySlides fade">
+                               <div class="slide_align">
+                <img src="Images/Karthik.png" class="image_box">
+                    <h1>Madiga Karthik</h1>
+                    
+                    <p><br>Hello!<br>
+                    My name is Madiga Karthik (C0E19B053) and I am from Kurnool, Andhra Pradesh.<br>I am doing B.tech in computer science at <a href="http://iiitdm.ac.in/" class="link"><bold>IIITDM Kancheepuram.</bold></a></p>
+                    </div>
+                    </div>
+            
+             <div class="mySlides fade">
+                <div class="slide_align">
+                <img src="Images/Sanjivee.png" class="image_box">
+                    <h1>Suram Sanjeev Reddy</h1>
+                    
+                    <p><br>Hello!<br>
+                    My name is Suram Sanjeev Reddy (CED19I024) and I am from Ongole, Andhra Pradesh.<br>I am doing duel degree in computer science at <a href="http://iiitdm.ac.in/" class="link"><bold>IIITDM Kancheepuram.</bold></a></p>
+                    </div>
+                    </div>
+            
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            <br>
+
+<div class="slider_menu">
+    <div>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span></div> 
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="Gototop"><bold style="position: relative;bottom: 3px;">&#x2191;</bold></button>
+        </div>
+        
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+    </body>
+</html>
+
